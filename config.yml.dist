@@ -1,0 +1,19 @@
+server:
+  port: 3000
+slack:
+  webhook: "https://hooks.slack.com/services/ [ SLACK HOOK URL HERE ]"
+  channel: "#deploy"
+  username: "deploybot"
+bitbucket:
+  handler:  "[ BITBUCKET WEB HOOK PATH HERE ]"
+  branches:
+    master:
+      deployment: "/var/projects/[ PROJECT LIVE PATH ON SERVER ]/"
+      gitreset: true
+      npminstall: true
+      notification: true
+    development:
+      deployment:  "/var/projects/[ PROJECT DEVELOPMENT PATH ON SERVER ]/"
+      gitreset: true
+      npminstall: true
+      notification: true
