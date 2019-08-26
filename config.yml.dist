@@ -4,6 +4,7 @@ slack:
   webhook: "https://hooks.slack.com/services/ [ SLACK HOOK URL HERE ]"
   channel: "#deploy"
   username: "deploybot"
+  welcome: true
 bitbucket:
   handler:  "/[ BITBUCKET WEB HOOK PATH HERE ]"
   branches:
