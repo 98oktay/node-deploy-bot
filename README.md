@@ -1,5 +1,5 @@
 # Node Deploy Bot
-Deployment Automation for NodeJS with Bitbucket
+Deployment Automation for NodeJS with Bitbucket. Automatically **clean -> pull -> install -> restart** your nodejs application on server after push on Bitbucket repository. You can work on multiple branches. And get notifications via Slack.
 
 ## Prerequirements
 - forever (>= 1.0 required)
@@ -86,7 +86,7 @@ https://api.slack.com/incoming-webhooks
 *  Click Add webhook..
 ![](https://docs.buddybuild.com/repository/bitbucket/img/click-add-webhook.png)
 
-* In the Title field, enter **Node Deploy Bot** and paste your cretaed deploy url (http://yourserver.com:8080/mySecretPathName) into the URL field.
+* In the Title field, enter **Node Deploy Bot** and paste your created handler url (http://yourserver.com:8080/mySecretPathName) into the URL field.
 
 * Once that expands, select Push and click Save.
 ![](https://docs.buddybuild.com/repository/bitbucket/img/click-save.png)
