@@ -5,7 +5,7 @@ slack:
   channel: "#deploy"
   username: "deploybot"
 bitbucket:
-  handler:  "[ BITBUCKET WEB HOOK PATH HERE ]"
+  handler:  "/[ BITBUCKET WEB HOOK PATH HERE ]"
   branches:
     master:
       deployment: "/var/projects/[ PROJECT LIVE PATH ON SERVER ]/"
