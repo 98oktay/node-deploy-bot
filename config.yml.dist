@@ -6,15 +6,23 @@ slack:
   username: "deploybot"
   welcome: true
 bitbucket:
-  handler:  "/[ BITBUCKET WEB HOOK PATH HERE ]"
-  branches:
-    master:
-      deployment: "/var/projects/[ PROJECT LIVE PATH ON SERVER ]/"
-      gitreset: true
-      npminstall: true
-      notification: true
-    development:
-      deployment:  "/var/projects/[ PROJECT DEVELOPMENT PATH ON SERVER ]/"
-      gitreset: true
-      npminstall: true
-      notification: true
+  projects:
+    - handler:  "/[ BITBUCKET WEB HOOK PATH HERE ]"
+      branches:
+        master:
+          deployment: "/var/projects/[ PROJECT LIVE PATH ON SERVER ]/"
+          gitreset: true
+          npminstall: true
+          notification: true
+        development:
+          deployment:  "/var/projects/[ PROJECT DEVELOPMENT PATH ON SERVER ]/"
+          gitreset: true
+          npminstall: true
+          notification: true
+    - handler:  "/[ OTHER BITBUCKET WEB HOOK PATH HERE ]"
+      branches:
+        master:
+          deployment: "/var/projects/[ PROJECT LIVE PATH ON SERVER ]/"
+          gitreset: true
+          npmbuild: true
+          notification: true
